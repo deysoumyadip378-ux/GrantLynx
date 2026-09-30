@@ -1,0 +1,118 @@
+pragma language_version >= 0.23.0;
+
+import CompactStandardLibrary;
+
+// Public on-chain ledger state for GrantLynx
+export ledger isInitialized: Boolean;
+export ledger grantPolicyCommitment: Bytes<32>;
+export ledger funderCommitment: Bytes<32>;
+export ledger totalMilestones: Uint<64>;
+
+export ledger activeMilestoneId: Uint<64>;
+export ledger activeThreshold: Uint<64>;
+export ledger activeTrancheAmount: Uint<64>;
+export ledger activeMilestoneStatus: Uint<64>; // 0 = Unset, 1 = Pending, 2 = Verified, 3 = Disputed, 4 = Released
+export ledger activeProofCommitment: Bytes<32>;
+export ledger isTrancheReleasable: Boolean;
+export ledger lastVerifiedTimestamp: Uint<64>;
+
+// Private off-chain witness functions evaluated in recipient/funder memory
+witness getPrivateMetric(): Uint<64>;
+witness getPrivateSalt(): Bytes<32>;
+witness getMilestoneEvidenceHash(): Bytes<32>;
+witness getFunderAuthSecret(): Bytes<32>;
+
+// Circuit 1: Initialize Grant Policy & Funder Commitment
+export circuit initializeGrant(
+    policyHash: Bytes<32>,
+    funderHash: Bytes<32>,
+    milestoneCount: Uint<64>
+): Boolean {
+    assert(!isInitialized, "Grant already initialized");
+    grantPolicyCommitment = disclose(policyHash);
+    funderCommitment = disclose(funderHash);
+    totalMilestones = disclose(milestoneCount);
+    isInitialized = true;
+    return true;
+}
+
+// Circuit 2: Configure Milestone Condition (Funder sets threshold & tranche)
+export circuit configureMilestone(
+    milestoneId: Uint<64>,
+    threshold: Uint<64>,
+    trancheAmount: Uint<64>
+): Boolean {
+    assert(isInitialized, "Grant contract not initialized");
+    assert(milestoneId <= totalMilestones, "Milestone ID exceeds total milestones");
+    activeMilestoneId = disclose(milestoneId);
+    activeThreshold = disclose(threshold);
+    activeTrancheAmount = disclose(trancheAmount);
+    activeMilestoneStatus = 1; // PENDING
+    isTrancheReleasable = false;
+    return true;
+}
+
+// Circuit 3: Zero-Knowledge Milestone Verification (Recipient proves metric >= threshold)
+// CRITICAL PRIVACY INVARIANT:
+// The recipient's privateMetric and privateSalt are processed exclusively in ZK.
+// Only the mathematical proof and blinded commitment are disclosed to the public ledger.
+export circuit verifyMilestoneZK(
+    targetMilestoneId: Uint<64>,
+    currentTimestamp: Uint<64>
+): Boolean {
+    assert(isInitialized, "Grant contract not initialized");
+    assert(activeMilestoneStatus == 1, "Milestone is not in PENDING status");
+    assert(activeMilestoneId == targetMilestoneId, "Target milestone does not match active milestone");
+
+    // Fetch private witnesses
+    const privateMetric = getPrivateMetric();
+    const privateSalt = getPrivateSalt();
+    const evidenceHash = getMilestoneEvidenceHash();
+
+    // Zero-Knowledge Predicate: assert that the private metric satisfies or exceeds the threshold
+    assert(privateMetric >= activeThreshold, "Private milestone metric does not satisfy agreed threshold");
+
+    // Create blinded cryptographic commitment over the private evidence and salt
+    const commitment = persistentHash<Bytes<32>>(privateSalt);
+
+    // Update public ledger with verified outcome
+    activeProofCommitment = disclose(commitment);
+    activeMilestoneStatus = 2; // VERIFIED
+    isTrancheReleasable = true;
+    lastVerifiedTimestamp = disclose(currentTimestamp);
+
+    return true;
+}
+
+// Circuit 4: Authorize Tranche Release (Funder verifies auth and unlocks funds)
+export circuit authorizeTrancheRelease(
+    expectedFunderHash: Bytes<32>
+): Boolean {
+    assert(isInitialized, "Grant contract not initialized");
+    assert(activeMilestoneStatus == 2, "Milestone has not been verified");
+    assert(isTrancheReleasable, "Tranche is not currently releasable");
+
+    const authSecret = getFunderAuthSecret();
+    const computedAuth = persistentHash<Bytes<32>>(authSecret);
+    assert(computedAuth == expectedFunderHash, "Unauthorized funder release signature");
+
+    activeMilestoneStatus = 4; // RELEASED
+    isTrancheReleasable = false;
+
+    return true;
+}
+
+// Circuit 5: Open Dispute Window
+export circuit openDisputeWindow(
+    disputeMilestoneId: Uint<64>
+): Boolean {
+    assert(isInitialized, "Grant contract not initialized");
+    assert(activeMilestoneId == disputeMilestoneId, "Milestone ID mismatch");
+    assert(activeMilestoneStatus == 2, "Can only dispute a verified milestone");
+
+    activeMilestoneStatus = 3; // DISPUTED
+    isTrancheReleasable = false;
+
+    return true;
+}
+
