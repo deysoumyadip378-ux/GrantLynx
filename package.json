@@ -25,7 +25,11 @@
     "privacy-preserving",
     "zk-snarks"
   ],
-  "author": "GrantLynx Core Engineering",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deysoumyadip378-ux/GrantLynx.git"
+  },
+  "author": "deysoumyadip378-ux <deysoumyadip378@gmail.com>",
   "license": "Apache-2.0",
   "overrides": {
     "@midnight-ntwrk/onchain-runtime-v3": "3.1.1"

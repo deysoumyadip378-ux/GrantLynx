@@ -164,8 +164,8 @@ GrantLynx eliminates traditional blue/green tropes in favor of an institutional 
 ### 1. Repository Setup
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/grantlynx.git
-cd grantlynx
+git clone https://github.com/deysoumyadip378-ux/GrantLynx.git
+cd GrantLynx
 
 # Install dependencies
 npm install
@@ -211,6 +211,13 @@ npm run build --prefix frontend
 # Preview production build locally
 npm run preview --prefix frontend -- --port 5173
 ```
+
+### 5. 1-Click Netlify Deployment
+This repository is pre-configured with [`netlify.toml`](netlify.toml) and client-side SPA `_redirects`:
+- **Base Directory:** `frontend`
+- **Build Command:** `npm run build`
+- **Publish Directory:** `dist`
+- **SPA Fallback:** All routes route to `/index.html` with HTTP 200 to prevent 404s on browser reload.
 
 ---
 
