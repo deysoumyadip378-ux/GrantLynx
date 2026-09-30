@@ -9,6 +9,8 @@ interface NavbarProps {
   isConnected: boolean;
   isConnecting: boolean;
   address: string | null;
+  activeProvider?: string | null;
+  dustBalance?: string | null;
   onConnect: () => void;
   onDisconnect: () => void;
   activeTab: 'dashboard' | 'create' | 'verify' | 'audit';
@@ -24,6 +26,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   isConnected,
   isConnecting,
   address,
+  activeProvider,
+  dustBalance,
   onConnect,
   onDisconnect,
   activeTab,
@@ -131,7 +135,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   {truncatedAddress}
                 </span>
                 <span className="text-[10px] text-zinc-400 font-sans">
-                  Midnight Preprod Verified
+                  {activeProvider || 'Midnight Preprod'} {dustBalance ? `• ${dustBalance}` : ''}
                 </span>
               </div>
               <button

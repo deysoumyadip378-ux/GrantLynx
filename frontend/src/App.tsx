@@ -88,6 +88,8 @@ export function App() {
         isConnected={wallet.isConnected}
         isConnecting={wallet.isConnecting}
         address={wallet.address}
+        activeProvider={wallet.activeProvider}
+        dustBalance={wallet.dustBalance}
         onConnect={() => wallet.connect()}
         onDisconnect={() => wallet.disconnect()}
         activeTab={activeTab}
