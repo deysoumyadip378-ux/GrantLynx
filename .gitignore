@@ -37,3 +37,5 @@ CHALLENGE_PROGRESS.md
 WALLETS_RECOVERY_PRIVATE.md
 *.key
 *.seed
+*midnight-level-db/
+*.log
