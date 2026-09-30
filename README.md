@@ -10,6 +10,8 @@
   </p>
 
   <p>
+    <a href="https://resonant-cranachan-df5641.netlify.app/"><img src="https://img.shields.io/badge/Live%20App-resonant--cranachan--df5641.netlify.app-10b981?style=for-the-badge&logo=netlify" alt="Live App" /></a>
+    <a href="https://youtu.be/pi-6k_lwlqg"><img src="https://img.shields.io/badge/Demo%20Video-YouTube%20Walkthrough-red?style=for-the-badge&logo=youtube" alt="Demo Video" /></a>
     <a href="https://preprod.midnightexplorer.com/contracts/68b0f1a1a952d5695c069f3328aa4841bab7ae38d16a116754ba548283f669b2"><img src="https://img.shields.io/badge/Midnight%20Preprod-Contract%20Live%20&%20Active-f59e0b?style=for-the-badge&logo=shield" alt="Preprod Contract Live" /></a>
     <a href="https://preprod.midnightexplorer.com/contracts/68b0f1a1a952d5695c069f3328aa4841bab7ae38d16a116754ba548283f669b2"><img src="https://img.shields.io/badge/Midnight.js-4.1.1%20Compact%200.5.2-fbbf24?style=for-the-badge" alt="Midnight.js" /></a>
     <a href="https://github.com/DavidHDev/react-bits"><img src="https://img.shields.io/badge/Motion-React%20Bits-d97706?style=for-the-badge" alt="React Bits" /></a>
@@ -23,6 +25,14 @@
 <div align="center">
   <img src="assets/grantlynx_hero_banner.jpg" alt="GrantLynx 4-Stage Zero-Knowledge Pipeline" width="100%" style="border-radius: 16px; margin: 16px 0; border: 1px solid rgba(245, 158, 11, 0.2);" />
 </div>
+
+### 🌐 Live Production Links & Video Walkthrough
+
+| Resource | Direct Link | Description |
+|:---|:---|:---|
+| 🚀 **Live Production DApp** | **[resonant-cranachan-df5641.netlify.app](https://resonant-cranachan-df5641.netlify.app/)** | Deployed on Netlify with automated CI/CD and universal SPA routing |
+| 📺 **Video Walkthrough Demo** | **[Watch on YouTube (youtu.be/pi-6k_lwlqg)](https://youtu.be/pi-6k_lwlqg)** | Complete action walkthrough: wallet connect, ZK proof generation, & funding release |
+| 📜 **Midnight Preprod Contract** | **[`68b0f1a1a952d5695c069f3328aa4841bab7ae38d16a116754ba548283f669b2`](https://preprod.midnightexplorer.com/contracts/68b0f1a1a952d5695c069f3328aa4841bab7ae38d16a116754ba548283f669b2)** | Verified on Midnight Preprod Explorer (HTTP 200) |
 
 ---
 
@@ -214,6 +224,7 @@ npm run preview --prefix frontend -- --port 5173
 
 ### 5. 1-Click Netlify Deployment
 This repository is pre-configured with [`netlify.toml`](netlify.toml) and client-side SPA `_redirects`:
+- **Live Production URL:** [https://resonant-cranachan-df5641.netlify.app/](https://resonant-cranachan-df5641.netlify.app/)
 - **Base Directory:** `frontend`
 - **Build Command:** `npm run build`
 - **Publish Directory:** `dist`

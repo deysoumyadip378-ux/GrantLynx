@@ -159,4 +159,5 @@
 | 2026-09-30 23:17:30 | Deploy | Added root build script and copy-dist synchronizer | Guaranteed 100% compatibility with Netlify monorepo deployment |
 | 2026-09-30 23:40:00 | Chain Audit | Bound live Preprod proof transaction & on-chain ledger state | Zero mock values; verified Preprod explorer links (Tx e1e2660b87531c6390b674bef77c72472e109370d52947ee81d31a9470205979 & Contract 68b0f1a1a952d5695c069f3328aa4841bab7ae38d16a116754ba548283f669b2) |
 | 2026-09-30 23:45:00 | Wallet Integration | Implemented Midnight v4 `connect(networkId)` & live balance sync | Full 1AM/Lace connector support with live DUST & tNIGHT balances displayed in Navbar |
+| 2026-09-30 23:55:00 | Docs & Release | Linked live Netlify deployment and YouTube walkthrough demo in README | Live app (resonant-cranachan-df5641.netlify.app) & YouTube demo (youtu.be/pi-6k_lwlqg) prominently documented |
 
