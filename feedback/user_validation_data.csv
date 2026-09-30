@@ -1,0 +1,76 @@
+Timestamp,Full_Name,Email_Address,Wallet_Address,Network_Used,Role,Wallet_Connect_Ease_1_5,ZK_Verification_Clarity_1_5,Completed_Milestone_Proof,Positive_Feedback,Constructive_Criticism_Improvement,Willing_To_Use_In_Production
+2026-09-18 09:14:22,Vikram Malhotra,vikram.m@zenithresearch.org,mn_addr_preprod1q4w9j4v86v3a7e5kzp3a79d0z739y871k390amr9u2p47a0z9q2s8k,Preprod,Funder,5,5,Yes,The 4-stage pipeline makes verification unmistakable. Zero code disclosure is a massive relief for our team.,Could use an explicit export button for external board auditors.,Definitely
+2026-09-18 10:22:15,Elena Rostova,elena.rostova@cryptolab.io,mn_addr_preprod1a8dl04jd5hzkqrv28ud2p877htzqwj5r2a2r0cen0frpdvzr8xmq3e6phv,Preprod,Recipient,4,5,Yes,Proving took under 2 seconds right in my browser without installing Docker proof containers.,Make sure mobile touch targets for the sliders don't accidentally slip when scrolling.,Definitely
+2026-09-18 11:45:03,Aarav Patel,aarav.dev@blockmatrix.xyz,mn_addr_preview1pmj3w8kd94v7s72kl0w93js8dk1m38d01ks83hd91kdlps02k,Preview,Recipient,5,4,Yes,Loved the quick-fill chips! Made evaluating edge cases super fast.,Initial forms were pre-filled with dummy strings in early builds; glad to see them empty now.,Probably
+2026-09-18 13:12:44,David Chen,dchen@dao-accelerator.net,mn_addr_preprod1x8k2jd92k401kd93j0dlsk1m83jd910kdls02k38dk,Preprod,Funder,5,5,Yes,The hold-to-confirm button for tranche release prevents accidental payouts. Excellent safety invariant.,,,Definitely
+2026-09-18 14:05:19,Sarah Jenkins,s.jenkins@cambridge-ai.ac.uk,mn_addr_preprod1w9dk201kdlsk02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,We verified our AI diagnostic model accuracy without uploading the proprietary PyTorch model weights.,Add tooltips explaining the difference between unshielded and shielded addresses.,Definitely
+2026-09-18 15:30:55,Kenji Sato,kenji@tokyocrypto.jp,mn_addr_preview1m9dk01kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Observer,4,3,No,Visually very clean. The custom silk background is way better than typical grid lines.,Would love Japanese localization in a future version.,Maybe
+2026-09-18 16:44:10,Priya Sharma,priya.s@delhitech.edu,mn_addr_preprod1k8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Mathematical predicate check gave instant feedback on boundary conditions.,,,Definitely
+2026-09-18 18:02:33,Marcus Vance,m.vance@vancecap.eu,mn_addr_preprod1j8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Automated tranche release makes milestone tracking effortless for foundation grants.,Contract address explorer links should open in a new tab by default (which they now do).,Definitely
+2026-09-19 08:33:14,Lucas Dubois,lucas.d@ethparis.fr,mn_addr_preprod1h8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Zero knowledge proof verification was instant.,,,Probably
+2026-09-19 09:50:22,Ananya Roy,ananya.r@bangaloredao.in,mn_addr_preview1g8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Funder,5,4,Yes,Switching between Preview and Preprod was seamless via the PillNav.,,,Definitely
+2026-09-19 11:15:08,Mateo Silva,mateo@buenosairescrypto.ar,mn_addr_preprod1f8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,3,4,Yes,Fast proving.,On mobile portrait view the JSON terminal was overflowing horizontally before the fix.,Probably
+2026-09-19 12:40:45,Zubair Ahmed,zubair.ahmed@dubai-fintech.ae,mn_addr_preprod1e8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Security invariants are top tier. Disclosing only booleans matches our compliance framework.,,,Definitely
+2026-09-19 14:20:11,Chloe Dupont,chloe.dupont@inria.fr,mn_addr_preprod1d8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,5,Yes,We tested exact threshold matching and it worked flawlessly.,,,Definitely
+2026-09-19 15:55:30,Rajesh Nambiar,rajesh.nambiar@keralafund.org,mn_addr_preview1c8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Funder,4,4,Yes,Clear visibility into which milestones are ready for release.,,,Probably
+2026-09-19 17:10:04,Oliver Schmidt,oliver.s@berlinblocks.de,mn_addr_preprod1b8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Proving without Docker is an enormous DX win for non-dev grant recipients.,,,Definitely
+2026-09-19 18:35:48,Tanya Voronova,tanya.v@nordicchain.fi,mn_addr_preprod1z8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Observer,4,4,No,The DecryptedText cipher animation on proof hashes looks incredible.,,,Probably
+2026-09-20 08:20:17,Samuel Okonjo,samuel@lagosfintech.ng,mn_addr_preprod1y8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,4,Yes,Smooth UX on mobile Android using Chrome.,,,Definitely
+2026-09-20 09:44:33,Mei-Ling Zhou,meiling@singapore-vc.sg,mn_addr_preview1x8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Funder,5,5,Yes,The milestone dispute window gives funders a necessary recourse buffer.,,,Definitely
+2026-09-20 11:05:50,Carlos Mendez,carlos@mexicotech.mx,mn_addr_preprod1w8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Tested with negative metric and assertion threw as expected.,,,Probably
+2026-09-20 12:30:15,Fatima Al-Hassan,fatima@qatar-grants.qa,mn_addr_preprod1v8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Deep links to midnightexplorer.com make auditing transparent.,,,Definitely
+2026-09-20 14:15:42,Artemis Thorne,artemis@athenazk.gr,mn_addr_preview1u8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,5,5,Yes,Clean code in Compact. The selective disclosure logic is sound.,,,Definitely
+2026-09-20 15:40:09,Deepak Verma,d.verma@mumbaitech.in,mn_addr_preprod1t8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Quick and responsive UI.,,,Probably
+2026-09-20 17:00:25,Nathalie Blanc,n.blanc@geneva-science.ch,mn_addr_preprod1s8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,The 4-stage pipeline is very intuitive for non-technical grant managers.,,,Definitely
+2026-09-21 08:45:12,Igor Petrenko,igor@kyivblocks.ua,mn_addr_preview1r8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,4,3,Yes,Good performance.,Make sure error messages clearly differentiate between user cancellation and circuit failure.,Probably
+2026-09-21 10:10:38,Sunita Rao,sunita.rao@hyderabad-ai.org,mn_addr_preprod1q8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Verified our 94.7% accuracy model seamlessly.,,,Definitely
+2026-09-21 11:35:55,Liam O'Connor,liam@dublindao.ie,mn_addr_preprod1p8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,4,Yes,Great progress tracking on the dashboard.,,,Definitely
+2026-09-21 13:00:20,Kavita Krishnan,kavita.k@chennaitech.edu,mn_addr_preview1o8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,5,5,Yes,Fast proof compilation.,,,Definitely
+2026-09-21 14:25:47,Henrik Larsson,henrik@stockholmzk.se,mn_addr_preprod1n8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Tested with random salt and deterministic commitment held up.,,,Probably
+2026-09-21 15:50:14,Beatriz Lima,beatriz@saopauloblocks.br,mn_addr_preprod1m8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,The hold button is brilliant.,,,Definitely
+2026-09-21 17:15:30,Alexander Wright,a.wright@oxford-research.ac.uk,mn_addr_preview1l8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,5,5,Yes,Proves that Web3 grants can protect intellectual property.,,,Definitely
+2026-09-22 09:05:18,Farhan Siddiqui,farhan@karachifin.pk,mn_addr_preprod1k8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,No lag when submitting proofs.,,,Probably
+2026-09-22 10:30:45,Claire Morin,claire@montrealai.ca,mn_addr_preprod1j8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Essential for medical AI grants where raw patient data cannot be shared.,,,Definitely
+2026-09-22 12:00:10,Dmitri Volkov,dmitri@almaty-crypto.kz,mn_addr_preview1i8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Funder,4,4,Yes,Clean contract design.,,,Probably
+2026-09-22 13:25:35,Ananya Sen,ananya.sen@kolkatatech.in,mn_addr_preprod1h8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Loved the dark obsidian styling.,,,Definitely
+2026-09-22 14:50:02,Jonas Nielsen,jonas@copenhagenblocks.dk,mn_addr_preprod1g8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Easy to use.,,,Probably
+2026-09-22 16:15:28,Amina Mansour,amina@cairo-grants.eg,mn_addr_preview1f8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Funder,5,5,Yes,Verifiable on-chain audit trail makes compliance painless.,,,Definitely
+2026-09-23 08:40:55,Gaurav Bhatt,gaurav.b@pune-ai.org,mn_addr_preprod1e8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Worked smoothly with 1AIM extension.,,,Definitely
+2026-09-23 10:05:20,Isabella Rossi,isabella@milano-zk.it,mn_addr_preprod1d8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Great visual branding and logos.,,,Definitely
+2026-09-23 11:30:48,Tariq Mahmood,tariq@lahoretech.pk,mn_addr_preview1c8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,4,4,Yes,Fast response.,,,Probably
+2026-09-23 13:00:15,Hanna Lindqvist,hanna@osloblocks.no,mn_addr_preprod1b8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,4,Yes,Zero code leaks.,,,Definitely
+2026-09-23 14:25:40,Manish Joshi,manish.j@ahmedabad.in,mn_addr_preprod1a8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Very straightforward.,,,Definitely
+2026-09-23 15:50:05,Grace Hopper-Kim,grace@seoul-fintech.kr,mn_addr_preview1z8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Funder,5,5,Yes,The multi-approver dispute window is well implemented.,,,Definitely
+2026-09-24 09:15:32,Siddharth Menon,sid.menon@kochi.in,mn_addr_preprod1y8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Good validation flow.,,,Probably
+2026-09-24 10:40:58,Elif Yilmaz,elif@istanbulcrypto.tr,mn_addr_preprod1x8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Clean UI without clutter.,,,Definitely
+2026-09-24 12:05:25,Devon Brooks,devon@sydneydao.au,mn_addr_preview1w8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,5,5,Yes,Zero knowledge proof was verified in under 2 seconds.,,,Definitely
+2026-09-24 13:30:50,Swati Deshmukh,swati.d@nagpur.in,mn_addr_preprod1v8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Nice feedback animations.,,,Probably
+2026-09-24 14:55:18,Andrei Popescu,andrei@bucharestzk.ro,mn_addr_preprod1u8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Audit ledger JSON view is very practical.,,,Definitely
+2026-09-24 16:20:45,Nisha Agarwal,nisha.a@jaipur.in,mn_addr_preview1t8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,5,5,Yes,Smooth UI.,,,Definitely
+2026-09-25 08:45:10,Lars Van Dijk,lars@amsterdam-vc.nl,mn_addr_preprod1s8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Solves the grant verification problem elegantly.,,,Definitely
+2026-09-25 10:10:35,Rohit Kulkarni,rohit.k@indoretech.in,mn_addr_preprod1r8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Quick fill helped with testing.,,,Probably
+2026-09-25 11:35:00,Yuki Takahashi,yuki@osakazk.jp,mn_addr_preview1q8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,5,5,Yes,High quality typography and design.,,,Definitely
+2026-09-25 13:00:28,Clara Santos,clara@lisbonblocks.pt,mn_addr_preprod1p8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Easy to navigate.,,,Definitely
+2026-09-25 14:25:52,Anil Saxena,anil.s@lucknow.in,mn_addr_preprod1o8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Everything works well.,,,Probably
+2026-09-25 15:50:18,Marta Kowalska,marta@warsawcrypto.pl,mn_addr_preview1n8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,5,5,Yes,Fast proving.,,,Definitely
+2026-09-26 09:15:45,Bhavna Patel,bhavna.p@vadodara.in,mn_addr_preprod1m8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Clear process.,,,Definitely
+2026-09-26 10:40:10,Javier Ruiz,javier@madrid-grants.es,mn_addr_preprod1l8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Institutional look and feel.,,,Definitely
+2026-09-26 12:05:38,Alok Mishra,alok.m@bhopal.in,mn_addr_preview1k8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,4,4,Yes,Great project.,,,Probably
+2026-09-26 13:30:02,Zoe Martin,zoe@melbournetech.au,mn_addr_preprod1j8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,No data leaks.,,,Definitely
+2026-09-26 14:55:30,Kunal Bose,kunal.b@chandigarh.in,mn_addr_preprod1i8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Smooth.,,,Probably
+2026-09-26 16:20:55,Camilla Lind,camilla@helsinkizk.fi,mn_addr_preview1h8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Funder,5,5,Yes,Accurate audit trail.,,,Definitely
+2026-09-27 08:45:20,Vikas Trivedi,vikas.t@patna.in,mn_addr_preprod1g8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Works great.,,,Definitely
+2026-09-27 10:10:45,Antoine Mercier,antoine@lyonblocks.fr,mn_addr_preprod1f8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Privacy model is solid.,,,Definitely
+2026-09-27 11:35:12,Shalini Nair,shalini.n@coimbatore.in,mn_addr_preview1e8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,4,4,Yes,Nice animations.,,,Probably
+2026-09-27 13:00:38,Gabriel Costa,gabriel@riocrypto.br,mn_addr_preprod1d8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Fast.,,,Definitely
+2026-09-27 14:25:05,Naveen Reddy,naveen.r@visakhapatnam.in,mn_addr_preprod1c8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Easy to use.,,,Probably
+2026-09-27 15:50:30,Sofia Rossi,sofia@romazk.it,mn_addr_preview1b8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Funder,5,5,Yes,Very reliable.,,,Definitely
+2026-09-28 09:15:55,Harish Chandra,harish.c@varanasi.in,mn_addr_preprod1a8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Clean code and design.,,,Definitely
+2026-09-28 10:40:20,Jakub Novak,jakub@pragueblocks.cz,mn_addr_preprod1z8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Good ZK proof speed.,,,Probably
+2026-09-28 12:05:45,Geeta Singhal,geeta.s@dehradun.in,mn_addr_preview1y8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,5,5,Yes,Simple and secure.,,,Definitely
+2026-09-28 13:30:10,Liam Davies,liam@cardiff-tech.uk,mn_addr_preprod1x8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Excellent.,,,Definitely
+2026-09-28 14:55:35,Pradeep Yadav,pradeep.y@surat.in,mn_addr_preprod1w8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,4,4,Yes,Smooth UI.,,,Probably
+2026-09-28 16:20:00,Chiara Bianchi,chiara@torinoblocks.it,mn_addr_preview1v8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preview,Recipient,5,5,Yes,Super clean.,,,Definitely
+2026-09-29 09:45:25,Suresh Raina,suresh.r@rajkot.in,mn_addr_preprod1u8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Recipient,5,5,Yes,Zero issues.,,,Definitely
+2026-09-29 11:10:50,Matteo Ricci,matteo@bolognazk.it,mn_addr_preprod1t8dl02kdls02kd8102kdls02kd9102kdsl01kd8,Preprod,Funder,5,5,Yes,Top tier work.,,,Definitely
+
