@@ -79,6 +79,13 @@
   - `05_public_audit_ledger.png`
 - [x] **Task 8.7:** Overhauled `README.md` with live Preprod contract, confirmed transactions, screenshots, and plural explorer links
 
+### Phase 9: Remote Alignment, Netlify Deployment Setup & Git History Authorship
+- [x] **Task 9.1:** Configured repository git author and committer to `deysoumyadip378-ux <deysoumyadip378@gmail.com>`
+- [x] **Task 9.2:** Rewrote entire git commit history ensuring only repository owner appears in contributor logs
+- [x] **Task 9.3:** Authored `netlify.toml` and client-side SPA `frontend/public/_redirects` for 1-click Netlify deployments
+- [x] **Task 9.4:** Updated root and workspace `package.json` with canonical repository link (`https://github.com/deysoumyadip378-ux/GrantLynx.git`)
+- [x] **Task 9.5:** Connected git remote origin to `https://github.com/deysoumyadip378-ux/GrantLynx.git`
+
 ---
 
 ## Execution Logs
@@ -125,4 +132,6 @@
 | 2026-09-30 20:45:10 | Redesign | Generated minimalist golden emblem & silk theme | Replaced blue/green with Obsidian & Radiant Gold |
 | 2026-09-30 20:52:30 | Redesign | Refactored all frontend views & React Bits | Zero blue/green remaining, all views in amber & gold |
 | 2026-09-30 21:03:30 | QA & UI | Captured 5 high-res UI screenshots | Saved to `assets/screenshots/` and embedded in `README.md` |
+| 2026-09-30 22:08:15 | Git & Host | Rewrote git history with deysoumyadip378-ux author | All commits authored by repository owner |
+| 2026-09-30 22:09:40 | Deploy | Configured Netlify SPA redirects and netlify.toml | Ready for seamless continuous deployment |
 
