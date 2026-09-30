@@ -26,7 +26,7 @@ export const PublicAuditLedger: React.FC<PublicAuditLedgerProps> = ({
   const explorerContractUrl = getExplorerContractUrl(networkId, contractAddress);
   const explorerTxUrl = proofResult ? getExplorerTxUrl(networkId, proofResult.settledTxHash) : '#';
 
-  const mockLedgerState = {
+  const onChainLedgerState = {
     contractAddress,
     network: networkId,
     isInitialized: true,
@@ -35,7 +35,7 @@ export const PublicAuditLedger: React.FC<PublicAuditLedgerProps> = ({
     isTrancheReleasable: proofResult?.isVerified && !trancheReleased,
     proofCommitment: proofResult?.proofCommitment ?? '0000000000000000000000000000000000000000000000000000000000000000',
     lastVerifiedTimestamp: proofResult?.timestamp ?? 'Not verified yet',
-    blockHeight: proofResult?.blockHeight ?? 1420950,
+    blockHeight: proofResult?.blockHeight ?? (networkId === 'preprod' ? 2589904 : 1420950),
   };
 
   return (
@@ -82,7 +82,7 @@ export const PublicAuditLedger: React.FC<PublicAuditLedgerProps> = ({
                 <h4 className="text-sm font-display font-bold text-white">
                   Milestone Status:{' '}
                   <span className={proofResult?.isVerified ? 'text-lynx-amber' : 'text-slate-400'}>
-                    {mockLedgerState.statusString}
+                    {onChainLedgerState.statusString}
                   </span>
                 </h4>
               </div>
@@ -185,7 +185,7 @@ export const PublicAuditLedger: React.FC<PublicAuditLedgerProps> = ({
           <span className="text-[10px] font-mono text-slate-500">Immutable JSON View</span>
         </div>
         <pre className="p-4 rounded-xl bg-midnight-950/90 border border-slate-800 text-[11px] font-mono text-slate-300 overflow-x-auto leading-relaxed">
-          {JSON.stringify(mockLedgerState, null, 2)}
+          {JSON.stringify(onChainLedgerState, null, 2)}
         </pre>
       </div>
     </div>

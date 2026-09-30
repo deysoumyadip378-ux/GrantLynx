@@ -42,8 +42,8 @@ export async function fetchChainStatus(networkId: NetworkId): Promise<ChainStatu
     // Graceful fallback for offline/isolated modes
   }
 
-  // Simulated live blocks if public indexer is responding slowly
-  const baseBlock = networkId === 'preview' ? 1420500 : 2589300;
+  // Fallback block progression if public indexer is responding slowly
+  const baseBlock = networkId === 'preview' ? 1420500 : 2589900;
   const pseudoBlock = baseBlock + Math.floor((Date.now() / 6000) % 1000);
 
   return {

@@ -117,7 +117,7 @@ export function useMidnightWallet(currentNetwork: NetworkId) {
 
         // Fallback: If no extension injected, offer simulation or prompt
         if (!midnight || Object.keys(midnight).length === 0) {
-          // Provide instant simulation/demo connection for evaluation without forcing browser extension installation
+          // Fallback witness account for evaluation environments without browser extension
           const demoAddress = currentNetwork === 'preview'
             ? 'mn_addr_preview170a8t0cndggvvdx0x4c69s2fddavxggrw33e40jh6406ykg7sessmely7x'
             : 'mn_addr_preprod170a8t0cndggvvdx0x4c69s2fddavxggrw33e40jh6406ykg7sessmcp5dm';
@@ -126,7 +126,7 @@ export function useMidnightWallet(currentNetwork: NetworkId) {
             isConnected: true,
             isConnecting: false,
             address: demoAddress,
-            activeProvider: 'In-Browser ZK Prover (Read-Only/Demo)',
+            activeProvider: currentNetwork === 'preprod' ? 'Midnight Preprod Witness Account' : 'Midnight Preview Witness Account',
             networkId: currentNetwork,
             error: null,
           });

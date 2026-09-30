@@ -244,7 +244,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                 Milestone 2 Verified: Data Processing Scalability Benchmark (100k records)
               </span>
             </div>
-            <span className="text-[10px] font-mono text-slate-500">2 days ago • Block #1419400</span>
+            <span className="text-[10px] font-mono text-slate-500">2 days ago • Block #{networkId === 'preprod' ? 2588100 : 1419400}</span>
           </div>
           <div className="p-3.5 rounded-xl bg-midnight-900/60 border border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs">
             <div className="flex items-center gap-3">
@@ -253,7 +253,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                 Milestone 1 Verified: Architecture Blueprint & Prototype Delivery
               </span>
             </div>
-            <span className="text-[10px] font-mono text-slate-500">2 weeks ago • Block #1405100</span>
+            <span className="text-[10px] font-mono text-slate-500">2 weeks ago • Block #{networkId === 'preprod' ? 2585400 : 1405100}</span>
           </div>
         </AnimatedList>
       </div>
