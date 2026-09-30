@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Compact Compiler Artifacts
+contract/managed/
+contract/artifacts/
+
+# Local Wallet and State
+.midnight-wallet-state/
+.midnight-state.json
+contract/.midnight-state.json
+frontend/.midnight-state.json
+
+# Environment and Secrets
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+
+# Test coverage
+coverage/
+
+# OS and Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Internal Hackathon and Review Tracking (DO NOT COMMIT)
+CHALLENGE_PROGRESS.md
+.internal-tracking/
+WALLETS_RECOVERY_PRIVATE.md
+*.key
+*.seed
