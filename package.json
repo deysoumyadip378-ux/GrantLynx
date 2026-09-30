@@ -2,12 +2,14 @@
   "name": "grantlynx-workspace",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "GrantLynx — Confidential Grant Milestone Verification & Funding Release Platform on Midnight Network",
   "workspaces": [
     "contract",
     "frontend"
   ],
   "scripts": {
+    "build": "npm run build --workspace=frontend && node scripts/copy-dist.js",
     "dev": "npm run dev --workspace=frontend",
     "build:frontend": "npm run build --workspace=frontend",
     "compile:contract": "npm run compile --workspace=contract",

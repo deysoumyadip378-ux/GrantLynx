@@ -99,6 +99,11 @@
 - [x] **Task 11.3:** Added portable compile commands in `contract/package.json` (`compile` and `compile:wsl`)
 - [x] **Task 11.4:** Added contract binding validation step in `.github/workflows/ci.yml` prior to test suite execution
 
+### Phase 12: Netlify Monorepo Build Automation
+- [x] **Task 12.1:** Configured root `package.json` with universal `"build"` script orchestrating `frontend` workspace compilation and `dist` synchronization
+- [x] **Task 12.2:** Created `scripts/copy-dist.js` to ensure both `frontend/dist` and root `dist` are populated identically with HTML, CSS, JS, and SPA `_redirects`
+- [x] **Task 12.3:** Aligned `netlify.toml` with root monorepo architecture (`command = "npm run build"`, `publish = "dist"`)
+
 ---
 
 ## Execution Logs
@@ -151,4 +156,5 @@
 | 2026-09-30 22:45:30 | CI/CD | Validated 11 contract tests and frontend Vite build | 100% green local verification |
 | 2026-09-30 22:54:00 | CI/CD | Tracked compiled managed bindings and prover keys in git | Enabled instant zero-dependency test execution |
 | 2026-09-30 22:55:00 | CI/CD | Added binding verification step in GitHub Actions | Guaranteed presence of contract artifacts |
+| 2026-09-30 23:17:30 | Deploy | Added root build script and copy-dist synchronizer | Guaranteed 100% compatibility with Netlify monorepo deployment |
 
