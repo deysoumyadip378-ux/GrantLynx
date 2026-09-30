@@ -26,15 +26,24 @@ jobs:
         run: |
           echo "Installing Midnight Compact compiler..."
           curl --proto '=https' --tlsv1.2 -LsSf https://github.com/midnightntwrk/compact/releases/latest/download/compact-installer.sh | sh || true
-          if [ -f "$HOME/.local/bin/compact" ]; then
+          if [ -d "$HOME/.local/bin" ]; then
             echo "$HOME/.local/bin" >> $GITHUB_PATH
           fi
-          if [ -f "$HOME/.compact/bin/compact" ]; then
+          if [ -d "$HOME/.compact/bin" ]; then
             echo "$HOME/.compact/bin" >> $GITHUB_PATH
           fi
 
       - name: Install Dependencies
         run: npm ci || npm install
+
+      - name: Verify Contract Bindings
+        run: |
+          if command -v compact >/dev/null 2>&1; then
+            echo "Compact compiler detected. Verifying compilation..."
+            compact compile contract/src/grantlynx.compact contract/managed || true
+          fi
+          test -f contract/managed/contract/index.js || { echo "Error: contract/managed/contract/index.js is missing"; exit 1; }
+          echo "✓ Contract bindings verified at contract/managed/contract/index.js"
 
       - name: Run Compact Circuit Simulation Test Suite
         run: npm run test:contract

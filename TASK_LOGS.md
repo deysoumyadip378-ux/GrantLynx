@@ -93,6 +93,12 @@
 - [x] **Task 10.4:** Synchronized root `package-lock.json` with workspace devDependencies (`vitest@2.1.8`, `@types/react`, `@types/react-dom`)
 - [x] **Task 10.5:** Verified 11/11 contract simulation tests pass and production frontend builds with zero TypeScript errors
 
+### Phase 11: Contract Bindings CI Availability & Compilation Portability
+- [x] **Task 11.1:** Tracked compiled `contract/managed/` bindings and verification circuit keys in git (aligned with Midnight benchmark architecture)
+- [x] **Task 11.2:** Removed `contract/managed/` from `.gitignore` so compiled TypeScript bindings are immediately available on checkout
+- [x] **Task 11.3:** Added portable compile commands in `contract/package.json` (`compile` and `compile:wsl`)
+- [x] **Task 11.4:** Added contract binding validation step in `.github/workflows/ci.yml` prior to test suite execution
+
 ---
 
 ## Execution Logs
@@ -143,4 +149,6 @@
 | 2026-09-30 22:09:40 | Deploy | Configured Netlify SPA redirects and netlify.toml | Ready for seamless continuous deployment |
 | 2026-09-30 22:45:00 | CI/CD | Fixed setup-node cache-dependency-path for npm monorepo | Resolved `unable to cache dependencies` failure |
 | 2026-09-30 22:45:30 | CI/CD | Validated 11 contract tests and frontend Vite build | 100% green local verification |
+| 2026-09-30 22:54:00 | CI/CD | Tracked compiled managed bindings and prover keys in git | Enabled instant zero-dependency test execution |
+| 2026-09-30 22:55:00 | CI/CD | Added binding verification step in GitHub Actions | Guaranteed presence of contract artifacts |
 

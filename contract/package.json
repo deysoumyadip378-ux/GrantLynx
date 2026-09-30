@@ -10,7 +10,8 @@
   },
   "author": "deysoumyadip378-ux <deysoumyadip378@gmail.com>",
   "scripts": {
-    "compile": "wsl -d Ubuntu -e bash -c \"~/.local/bin/compact compile '/mnt/c/Users/bisha/Videos/midnight projects/grantlynx/contract/src/grantlynx.compact' '/mnt/c/Users/bisha/Videos/midnight projects/grantlynx/contract/managed'\"",
+    "compile": "compact compile src/grantlynx.compact managed",
+    "compile:wsl": "wsl -d Ubuntu -e bash -c \"~/.local/bin/compact compile '/mnt/c/Users/bisha/Videos/midnight projects/grantlynx/contract/src/grantlynx.compact' '/mnt/c/Users/bisha/Videos/midnight projects/grantlynx/contract/managed'\"",
     "test": "npx vitest run",
     "test:watch": "vitest",
     "check-balance": "npx tsx scripts/check-balance.ts",
